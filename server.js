@@ -16,7 +16,7 @@ const corsOptions = {
   origin: process.env.ALLOWED_CLIENTS.split(","),
 }
 
-app.use(cors(corOptions))
+app.use(cors(corsOptions))
 
 //Template engine
 app.set("views", path.join(__dirname, "/views"))
